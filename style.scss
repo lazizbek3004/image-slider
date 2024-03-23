@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.container{
+    width: 700px;
+    height: 500px;
+    border: 2px solid blue;
+    margin: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.small{
+    width: 300px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid blue;
+    span{
+        color: blue;
+        font-family: monospace;
+        font-weight: bold;
+    }
+}
+.image{
+    width: 100%;
+}
+.btn{
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: blue;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 40px;
+    transition: all 1s linear;
+}
+.small{
+    
+    transform: all 2s;
+}
+@keyframes move {
+    from{
+        color: white;
+    }
+    to{
+        transform: translateX(-160px) rotateY(180deg) ;
+    }
+   
+}
+.smallA{
+    border: 2px solid brown;
+    animation: move 1s  forwards;
+  
+    
+    // transform: translateX(-100px) rotateY(180deg);
+}
+.newA{
+    animation: change 1s linear forwards;
+}
+ @keyframes change {
+    from{
+        color: blue;
+    }
+    to{
+        color: brown;
+        transform: rotateY(180deg);
+    }
+ }
+
+ .containerA{
+    background-color: white;
+    border: 2px solid brown;
+ }
+.btnA{
+    background-color: brown;
+}
+.hidden{
+    width: 200px;
+    height: 60px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    background-color: brown;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: all 1s linear;
+}
